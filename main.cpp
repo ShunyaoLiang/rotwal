@@ -13,7 +13,8 @@ inline bool exists(const std::string& name)
 	return f.good();
 }
 
-const std::vector<std::string> parsefile(const std::string& name) {
+const std::vector<std::string> parsefile(const std::string& name)
+{
 	std::ifstream f(name);
 	std::string current;
 	std::vector<std::string> s;
